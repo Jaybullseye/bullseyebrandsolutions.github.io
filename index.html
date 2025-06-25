@@ -7,67 +7,119 @@
   <title>Bullseye Brand Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #d62828;
+      --light: #fff;
+      --dark: #222;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #fff;
+      color: var(--dark);
+      background: var(--light);
     }
+
     header {
-      background: #d62828;
-      color: white;
-      padding: 2rem 1rem;
+      background: url('https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: var(--light);
       text-align: center;
+      padding: 5rem 1rem;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.2rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
     nav {
-      background: #f8f9fa;
+      background: var(--light);
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       text-align: center;
-      padding: 1rem 0;
     }
+
     nav a {
       margin: 0 15px;
-      color: #d62828;
       text-decoration: none;
+      color: var(--primary);
       font-weight: 600;
     }
+
     section {
-      padding: 2rem 1rem;
-      max-width: 900px;
+      padding: 3rem 1rem;
+      max-width: 1100px;
       margin: auto;
     }
+
     h2 {
-      color: #d62828;
+      color: var(--primary);
       margin-bottom: 1rem;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
+
     .grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: space-between;
     }
+
     .card {
       flex: 1 1 250px;
-      background: #f1f1f1;
+      background: var(--gray);
       padding: 1rem;
       border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .work ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .video-placeholder {
+      background: #000;
+      color: #fff;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary);
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Bullseye Brand Solutions Pvt. Ltd.</h1>
+  <h1>Bullseye Brand Solutions</h1>
   <p>Tailored Branding. Exceptional Experiences.</p>
 </header>
 
@@ -80,31 +132,50 @@
 
 <section id="about">
   <h2>About Us</h2>
-  <p>Founded in 2011 and based in Ahmedabad, Bullseye Brand Solutions is a premier agency specializing in events, branding, exhibitions, and promotional campaigns. We bring creativity, insight, and execution together to deliver impactful brand experiences.</p>
+  <p>Founded in 2011 in Ahmedabad, Bullseye Brand Solutions is a bespoke agency specializing in events, branding, and promotional activations. Our work is grounded in insight, creativity, and flawless execution.</p>
 </section>
 
 <section id="services">
   <h2>Core Services</h2>
   <div class="grid">
-    <div class="card">Branding & Merchandising</div>
-    <div class="card">Exhibitions & Stall Designing</div>
-    <div class="card">Corporate Events & Product Launches</div>
-    <div class="card">Roadshows & CSR Activities</div>
-    <div class="card">Short Films & Documentaries</div>
-    <div class="card">Radio & RWA Campaigns</div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/branding.png" alt="Branding">
+      Branding & Merchandising
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/exhibition.png" alt="Exhibition">
+      Exhibitions & Stall Designing
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/conference.png" alt="Events">
+      Events & Product Launches
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/megaphone.png" alt="Promotions">
+      Roadshows & CSR Activities
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/film-reel.png" alt="Films">
+      Short Films & Documentaries
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/radio.png" alt="Radio">
+      Radio & RWA Campaigns
+    </div>
   </div>
 </section>
 
-<section id="work">
+<section id="work" class="work">
   <h2>Our Work</h2>
   <ul>
     <li>Adani Wilmar – Khadya Khurak 2024</li>
     <li>ICICI Kshitij Event</li>
     <li>Silver & Bediya – Africa Agri Expo</li>
-    <li>Maggi Rural Branding Campaign</li>
-    <li>Makita & Stanley Retail Merchandising</li>
-    <li>25-Year Celebration for Mangalam IT</li>
+    <li>Maggi Rural Promotion using Mobile Vans</li>
+    <li>Retail Branding for Makita, Stanley, Dewalt</li>
+    <li>25-Year Celebration for Mangalam IT Solutions</li>
   </ul>
+  <div class="video-placeholder">[ Video Placeholder - Coming Soon ]</div>
 </section>
 
 <section id="contact">
@@ -114,8 +185,9 @@
     Opp. Rahul Tower, 100 FT Road,<br>
     Anandnagar, Satellite, Ahmedabad 380015
   </p>
-  <p><strong>Email:</strong> <a href="mailto:bullseye.entertainment@gmail.com">bullseye.entertainment@gmail.com</a><br>
-     <strong>Phone:</strong> +91-9924297147 / +91-999820100
+  <p>
+    <strong>Email:</strong> <a href="mailto:bullseye.entertainment@gmail.com">bullseye.entertainment@gmail.com</a><br>
+    <strong>Phone:</strong> +91-9924297147 / +91-999820100
   </p>
 </section>
 
@@ -125,3 +197,4 @@
 
 </body>
 </html>
+
